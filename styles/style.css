@@ -1,6 +1,22 @@
-
-.borda {
-    border: 2px solid black;
-    width: fit-content;
+.quadro {
+    width: 560px;
+    margin: auto;
 }
+
+.board {
+    max-width: 100%;
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    border-radius: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
 
