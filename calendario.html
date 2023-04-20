@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calendário</title>
+  <!-- Adicione os links para os arquivos CSS do Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="estilo-calendario.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="MesAno">Calendário</h1>
+    <div class="row">
+      <div class="col">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Domingo</th>
+              <th>Segunda</th>
+              <th>Terça</th>
+              <th>Quarta</th>
+              <th>Quinta</th>
+              <th>Sexta</th>
+              <th>Sábado</th>
+            </tr>
+          </thead>
+          <tbody class='dia-bloco text-center' id="calendario">
+            <!-- Aqui será gerado o calendário via JavaScript -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Adicione os links para os arquivos JavaScript do Bootstrap e o seu próprio código JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Obtém a tabela do calendário
+      const calendario = document.getElementById('calendario');
+
+      // Obtém a data atual
+      const dataAtual = new Date();
+
+      // Obtém o mês atual (0-11)
+      const mesAtual = dataAtual.getMonth();
+
+      // Obtém o ano atual (yyyy)
+      const anoAtual = dataAtual.getFullYear();
+
+      // Obtém o último dia do mês atual
+      const ultimoDiaMesAtual = new Date(anoAtual, mesAtual + 1, 0).getDate();
+
+      // Gera as células do calendário
+      let dia = 1;
+      for (let i = 0; i < 6; i++) {
+        const row = document.createElement('tr');
+        for (let j = 0; j < 7; j++) {
+          const cell = document.createElement('td');
+          if (i === 0 && j < new Date(anoAtual, mesAtual).getDay()) {
+            // Células vazias antes do primeiro dia do mês
+            cell.innerHTML = '';
+          } else if (dia > ultimoDiaMesAtual) {
+            // Células vazias após o último dia do mês
+            cell.innerHTML = '';
+          } else {
+            // Células com os dias do mês atual
+            cell.innerHTML = `<a href="#" class="dia-link">${dia}</a>`;
+            dia++;
+          }
+          row.appendChild(cell);
+        }
+        calendario.appendChild(row);
+      }
+
+      // Adiciona um evento de clique aos links dos dias
+      const diaLinks = document.getElementsByClassName('dia-bloco');
+      for (let i = 0; i < diaLinks.length; i++) {
+        diaLinks[i].addEventListener('click', function() {
+          alert('Escolha seu horário')
+        })
+      }  
+    })
+    
+    </script>
+</body>
+</html>

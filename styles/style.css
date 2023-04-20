@@ -1,6 +1,7 @@
-.quadro {
+.calendario {
     width: 560px;
     margin: auto;
+    display: flex;
 }
 
 .board {
@@ -11,12 +12,40 @@
     border-radius: 16px;
 }
 
+.month {
+    width: 500px;
+    height: 70px;
+    border: 1px solid black;
+}
+.dayWeek {
+    width: 75px;
+}
+.numberday {
+    width: 75px;
+    height: 75px;
+    border: 1px solid black;
+    background-color: white;
+}
+
 a {
     text-decoration: none;
     color: white;
 }
 
 
+.box {
+    width: 600px;
+    height: 300px;
+    border: 1px solid black;
+    padding: 2px 4px;
+    overflow-y: scroll;
+    overflow-x: auto;
+}
 
+.log {
+    margin-top: 8px;
+    font-family: monospace;
+}
+  
 
 
