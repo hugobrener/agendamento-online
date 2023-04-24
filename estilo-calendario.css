@@ -2,20 +2,38 @@
     background-color: brown;
     color: white;
     font-size:20px ;
+    width: 85px;
+    border: none;
+    padding: 0px;
+    border-radius: 16px;
 }
 
-.dia-bloco:hover {
-    cursor: pointer;
+.date-block {
+    background-color: maroon;
+    border-radius: 10px;
+    color: white;
 }
 
-a {
-    text-decoration: none;
-    color: currentColor;
+.table {
+    width: 85px;
+    /* background-color: rgb(145, 145, 145); */
 }
 
-a:hover {
-    cursor: pointer;
-    text-decoration: none;
-    color: currentColor;
+
+.btn-dia {
+    border-color: brown;
+    color: white;
+}
+
+.btn-dia:hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+
+.btn-dia:active {
+    border: none;
+    
     
 }
+

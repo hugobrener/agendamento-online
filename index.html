@@ -8,44 +8,96 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <!-- <div class="quadro">
-        <div class="board mx-auto" id="calendar"></div>
-    </div> -->
-    <!-- <div>
-        
-        <div class="box">
-            <div><strong>Log:</strong></div>
-            <div class="log"></div>
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>Tabela de Horários</title>
+  <style>
+    table {
+      width: 300px;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+      border: 1px solid black;
+    }
+
+    .horario-btn {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Launch static backdrop modal
+    </button>
+  
+  <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            ...
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Understood</button>
+            </div>
         </div>
-          
-    </div> -->
-    <div id="calendario">
-        <div class="month text-center" id="mes"></div>
-        <div class="d-flex m-1 p-2 " >
-            <div class="p-2 m-1 dayWeek">segunda</div>
-            <div class="p-2 m-1 dayWeek">terça</div>
-            <div class="p-2 m-1 dayWeek">quarta</div>
-            <div class="p-2 m-1 dayWeek">quinta</div>
-            <div class="p-2 m-1 dayWeek">sexta</div>
-            <div class="p-2 m-1 dayWeek">sabado</div>
-        </div>
-        <div class="d-flex flex-wrap text-center m-1 p-2">
-            <div class="numberday d-flex justify-content-center align-items-center m-1 p-2" data-segunda></div>
-            <div class="numberday d-flex justify-content-center align-items-center m-1 p-2" data-terca></div>
-            <div class="numberday d-flex justify-content-center align-items-center m-1 p-2" data-quarta></div>
-            <div class="numberday d-flex justify-content-center align-items-center m-1 p-2" data-quinta></div>
-            <div class="numberday d-flex justify-content-center align-items-center m-1 p-2" data-sexta></div>
-            <div class="numberday d-flex justify-content-center align-items-center m-1 p-2" data-sabado></div>
         </div>
     </div>
+  <table>
+    <tr>
+      <td><button class="horario-btn">8h - 9h</button></td>
+      <td><button class="horario-btn">8h30 - 9h30</button></td>
+      <td><button class="horario-btn">9h - 10h</button></td>
+    </tr>
+    <tr>
+      <td><button class="horario-btn">8h - 9h</button></td>
+      <td><button class="horario-btn">8h30 - 9h30</button></td>
+      <td><button class="horario-btn">9h - 10h</button></td>
+    </tr>
+    <tr>
+      <td><button class="horario-btn">8h - 9h</button></td>
+      <td><button class="horario-btn">8h30 - 9h30</button></td>
+      <td><button class="horario-btn">9h - 10h</button></td>
+    </tr>
+  </table>
+  <button  class="btn-principal btn-hover btn-active bg-gradient-vp" type="button">Agendar</button>
+  <script>
 
+    // Obtém todos os botões de horários
+    const horarioBtns = document.getElementsByClassName('horario-btn');
+
+    // Adiciona um evento de clique a cada botão de horário
+    for (let i = 0; i < horarioBtns.length; i++) {
+      horarioBtns[i].addEventListener('click', function() {
+        // Obtém o horário escolhido
+        const horario = horarioBtns[i].innerText;
+
+        // Exibe uma pop-up com a mensagem "Escolha seu horário" e o horário escolhido
+        alert('Escolha seu horário: ' + horario);
+      });
+    }
+  </script>
+</body>
+</html>
+
+    
     <script src="js/selecao-data.js"></script>
-    <!-- <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.5/index.global.min.js"></script>
-    <script src="node_modules/@fullcalendar/core/locales/pt-br.global.js"></script> -->
+    <script src="node_modules/@fullcalendar/core/locales/pt-br.global.js"></script>
 </body>
 </html>
 
