@@ -1,34 +1,28 @@
-
-.dia-bloco {
-    background-color: brown;
-    color: white;
-    font-size:20px ;
-    width: 85px;
-    border: none;
-    padding: 0px;
-    border-radius: 16px;
-}
-
-.date-block {
-    background-color: maroon;
-    border-radius: 10px;
-    color: white;
+.day-week {
+    background-color: #830a0a;
 }
 
 .table {
-    width: 100px;
-    /* background-color: rgb(145, 145, 145); */
+    width: 568px;
+    background-color: rgba(185, 183, 183, 0.562); 
+    margin: auto;
+    border-radius:10px ;
 }
 
 
 .btn-dia {
-    border-color: brown;
+    border-color: #830a0a;
     color: white;
+    width: 60px;
+    height: 60px;
+    background-color:#830a0a;
+    padding: 6px;
 }
 
 .btn-dia:hover {
     color: white;
-    transform: scale(1.1);
+    background-color: rgb(168, 10, 10);
+    transform: scale(1.2);
 }
 
 

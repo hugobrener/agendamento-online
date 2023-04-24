@@ -14,8 +14,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Obtém o último dia do mês atual
     const ultimoDiaMesAtual = new Date(anoAtual, mesAtual + 1, 0).getDate();
 
+    const mesAgora = ['Janeiro', 'Fevereiro', 'Março', 'Abril']
+    const mesTitulo = document.getElementById('mes-titulo')
+    mesTitulo.textContent = `Agenda ${mesAgora[mesAtual]} de ${anoAtual}`
+    
     // Gera as células do calendário
     let dia = 1;
+    
     for (let i = 0; i < 6; i++) {
       const row = document.createElement('tr');
       for (let j = 0; j < 7; j++) {
