@@ -28,8 +28,8 @@ document.addEventListener('DOMContentLoaded', function() {
           // Células vazias após o último dia do mês
           cell.innerHTML = '';
         } else {
-          // Células com os dias do mês atual
-          cell.innerHTML = `<button type="button" class="btn btn-dia" data-bs-toggle="modal" data-bs-target="#staticBackdrop">${dia}</button>`
+          // Células com os dias do mês atual 
+          cell.innerHTML = `<button type="button" class="btn btn-dia" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-target="#staticBackdrop">${dia}</button>`
           dia++;
         }
         row.appendChild(cell);

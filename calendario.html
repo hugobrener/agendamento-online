@@ -33,39 +33,83 @@
   
 
   <!-- Modal -->
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
+  <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel">Escolha o Profissional</h1>
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Escolha o profissional</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">x</button>
         </div>
         <div class="modal-body">
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
-              Lucas Marcelo
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-            <label class="form-check-label" for="flexRadioDefault2">
-              Marcos RIbeiro
-            </label>
+          <div class="d-flex justify-content-center">
+            <div>
+              <img class="mx-2 text-center" src="imagens/foto-lucas-perfil.jpg" alt="">
+              <p class="mx-2 text-center">Lucas Marcelo</p>
+            </div>
+            <div>
+              <img class="mx-2 text-center" src="imagens/foto-marcos-perfil.jpg" alt="">
+              <p class="mx-2 text-center">Marcos Ribeiro</p>
+            </div>
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
-          <button type="button" class="btn btn-primary">Confirmar</button>
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Serviço</button>
         </div>
       </div>
     </div>
   </div>
+  <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Serviço</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">x</button>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li>corte</li>
+            <li>barba</li>
+            <li>corte e barba</li>
+            <li>sobrancelha</li>
+            <li>pezinho</li>
+            <li>botox</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">Horário</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Serviço</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">x</button>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li>9h00</li>
+            <li>10h00</li>
+            <li>11h00</li>
+            <li>12h00 - indisponível</li>
+            <li>13h00</li>
+            <li>14h00</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
   <!-- Adicione os links para os arquivos JavaScript do Bootstrap e o seu próprio código JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="js/calendario.js"></script>
 </body>
 </html>
