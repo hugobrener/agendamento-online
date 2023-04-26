@@ -1,0 +1,17 @@
+{
+  "Agenda": [
+    {
+      "Barbeiro": "Lucas Marcelo",
+      "Dia": "Domingo 23/04/2023",
+      "Servico": "corte",
+      "Horário": "09:00"
+    },
+    {
+      "Barbeiro": "Lucas Marcelo",
+      "Dia": "Domingo 23/04/2023",
+      "Servico": "corte e barba",
+      "Horário": "15:00"
+    }
+  ]
+  
+}

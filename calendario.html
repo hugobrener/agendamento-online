@@ -43,18 +43,18 @@
         <div class="modal-body">
           <div class="d-flex justify-content-center">
             <div>
-              <img class="mx-2 text-center" src="imagens/foto-lucas-perfil.jpg" alt="">
+              <button class="btn bg-principal" id="Lucas Marcelo" data-profissional><img class="mx-2 text-center" src="imagens/foto-lucas-perfil.jpg" alt=""></button>
               <p class="mx-2 text-center">Lucas Marcelo</p>
             </div>
             <div>
-              <img class="mx-2 text-center" src="imagens/foto-marcos-perfil.jpg" alt="">
+              <button class="btn bg-principal" id="Marcos Ribeiro" data-profissional><img class="mx-2 text-center" src="imagens/foto-marcos-perfil.jpg" alt=""></button>
               <p class="mx-2 text-center">Marcos Ribeiro</p>
             </div>
           </div>
         </div>
         <div class="modal-footer">
           <button class="btn btn-secondary" data-bs-dismiss="modal" data-bs-toggle="modal">Voltar</button>
-          <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Serviço</button>
+          <button class="btn bg-principal text-white" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Serviço</button>
         </div>
       </div>
     </div>
@@ -67,17 +67,18 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <ul>
-            <li>corte</li>
-            <li>barba</li>
-            <li>corte e barba</li>
-            <li>sobrancelha</li>
-            <li>pezinho</li>
-            <li>botox</li>
+          <ul class="lista-de-servico">
+            <li class="lista-servico"><button class="btn bg-principal text-white my-1" data-servico>corte</button></li>
+            <li class="lista-servico"><button class="btn bg-principal text-white my-1" data-servico>barba</button></li>
+            <li class="lista-servico"><button class="btn bg-principal text-white my-1" data-servico>corte e barba</button></li>
+            <li class="lista-servico"><button class="btn bg-principal text-white my-1" data-servico>sobrancelha</button></li>
+            <li class="lista-servico"><button class="btn bg-principal text-white my-1" data-servico>pezinho</button></li>
+            <li class="lista-servico"><button class="btn bg-principal text-white my-1" data-servico>botox</button></li>
           </ul>
         </div>
         <div class="modal-footer">
-          <button class="btn btn-primary" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">Horário</button>
+          <button class="btn btn-secondary text-white" data-bs-dismiss="modal" data-bs-toggle="modal">Voltar</button>
+          <button class="btn bg-principal text-white" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">Horário</button>
         </div>
       </div>
     </div>
@@ -91,16 +92,17 @@
         </div>
         <div class="modal-body">
           <ul>
-            <li>9h00</li>
-            <li>10h00</li>
-            <li>11h00</li>
-            <li>12h00 - indisponível</li>
-            <li>13h00</li>
-            <li>14h00</li>
+            <li class="lista-servico"><button class="btn bg-principal text-white my-1" data-horario >9h00</button></li>
+            <li class="lista-servico"><button class="btn bg-principal text-white my-1" data-horario>10h00</button></li>
+            <li class="lista-servico"><button class="btn bg-principal text-white my-1" data-horario>11h00</button></li>
+            <li class="lista-servico"><button class="btn bg-principal text-white my-1" data-horario>12h00 - indisponível</button></li>
+            <li class="lista-servico"><button class="btn bg-principal text-white my-1" data-horario>13h00</button></li>
+            <li class="lista-servico"><button class="btn bg-principal text-white my-1" data-horario>14h00</button></li>
           </ul>
         </div>
         <div class="modal-footer">
-          <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+          <button class="btn btn-secondary text-white" data-bs-dismiss="modal" data-bs-toggle="modal">Voltar</button>
+          <button class="btn bg-principal text-white" data-confirma data-bs-target="dismiss" data-bs-toggle="modal">Concluir</button>
         </div>
       </div>
     </div>

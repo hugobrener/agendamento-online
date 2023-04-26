@@ -9,7 +9,14 @@
     border-radius:10px ;
 }
 
+.bg-principal {
+    background-color:#830a0a;
+}
 
+.bg-principal:hover {
+    background-color: rgb(168, 10, 10);
+    transform: scale(1.2);
+}
 .btn-dia {
     border-color: #830a0a;
     color: white;
@@ -31,4 +38,9 @@
     
     
 }
+
+.lista-de-servico {
+    column-count: 2;
+}
+
 

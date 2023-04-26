@@ -1,5 +1,11 @@
-
-
+// construir objeto agenda
+      /* {
+        "Barbeiro": "profissional-escolhido",
+        "Dia": "dia-escolhido",
+        "Servico": "servico-escolhido",
+        "Horário": "horario-escolhido"
+      } */
+      
 /* function log(msg) {
     const logElem = document.querySelector(".log");
   
