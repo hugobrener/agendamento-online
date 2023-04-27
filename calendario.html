@@ -13,8 +13,8 @@
       <div class="col">
         <table class="text-center table table-bordered">
           <thead>
-            <tr>
-              <th class="p-1 day-week">Domingo</th>
+            <tr class="day-week text-white">
+              <th class="p-1 ">Domingo</th>
               <th class="p-1 ">Segunda</th>
               <th class="p-1 ">Terça</th>
               <th class="p-1 ">Quarta</th>
@@ -37,68 +37,96 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Escolha o profissional</h1>
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Selecione as opções</h1>
           <button type="button" class="btn-close p-1" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <div class="d-flex justify-content-center">
-            <div>
-              <button class="btn bg-principal" id="Lucas Marcelo" data-profissional><img class="mx-2 text-center" src="imagens/foto-lucas-perfil.jpg" alt=""></button>
-              <p class="mx-2 text-center">Lucas Marcelo</p>
+          <div class="container-fluid">
+            <div class="row">
+              <h3>Profissional</h3>
+              <div class="col-md-6">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    <img class="mx-2 text-center" src="imagens/foto-marcos-perfil.jpg" alt="">
+                    <p class="mx-2 text-center">Marcos Ribeiro</p>
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-6 ">
+              <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    <img class="mx-2 text-center" src="imagens/foto-lucas-perfil.jpg" alt="">
+                    <p class="mx-2 text-center">Lucas Marcelo</p>
+                  </label>
+                </div> 
             </div>
-            <div>
-              <button class="btn bg-principal" id="Marcos Ribeiro" data-profissional><img class="mx-2 text-center" src="imagens/foto-marcos-perfil.jpg" alt=""></button>
-              <p class="mx-2 text-center">Marcos Ribeiro</p>
+            <div class="row">
+              <h3>Serviços</h3>
+              <div class="col-md-12 ms-auto">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                  <label class="form-check-label" for="inlineCheckbox1">corte</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                  <label class="form-check-label" for="inlineCheckbox2">barba</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" >
+                  <label class="form-check-label" for="inlineCheckbox3">sobrancelha</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4" >
+                  <label class="form-check-label" for="inlineCheckbox4">pezinho</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5" >
+                  <label class="form-check-label" for="inlineCheckbox5">botox</label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <h3>Horários</h3>
+              <div class="col-md-12 ms-auto"><div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">8:00</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">9:00</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" >
+                <label class="form-check-label" for="inlineRadio3">10:00 </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4" >
+                <label class="form-check-label" for="inlineRadio4">11:00 </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5" >
+                <label class="form-check-label" for="inlineRadio5">14:00 </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6" >
+                <label class="form-check-label" for="inlineRadio6">15:00 </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio7" value="option7" >
+                <label class="form-check-label" for="inlineRadio7">16:00 </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio8" value="option8" >
+                <label class="form-check-label" for="inlineRadio8">17:00 </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio9" value="option9" >
+                <label class="form-check-label" for="inlineRadio9">18:00 </label>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-secondary" data-bs-dismiss="modal" data-bs-toggle="modal">Voltar</button>
-          <button class="btn bg-principal text-white" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Serviço</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Serviço</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <ul class="lista-de-servico">
-            <li class="lista-servico"><button class="btn bg-principal text-white my-1" data-servico>corte</button></li>
-            <li class="lista-servico"><button class="btn bg-principal text-white my-1" data-servico>barba</button></li>
-            <li class="lista-servico"><button class="btn bg-principal text-white my-1" data-servico>corte e barba</button></li>
-            <li class="lista-servico"><button class="btn bg-principal text-white my-1" data-servico>sobrancelha</button></li>
-            <li class="lista-servico"><button class="btn bg-principal text-white my-1" data-servico>pezinho</button></li>
-            <li class="lista-servico"><button class="btn bg-principal text-white my-1" data-servico>botox</button></li>
-          </ul>
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-secondary text-white" data-bs-dismiss="modal" data-bs-toggle="modal">Voltar</button>
-          <button class="btn bg-principal text-white" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">Horário</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Serviço</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <ul>
-            <li class="lista-servico"><button class="btn bg-principal text-white my-1" data-horario >9h00</button></li>
-            <li class="lista-servico"><button class="btn bg-principal text-white my-1" data-horario>10h00</button></li>
-            <li class="lista-servico"><button class="btn bg-principal text-white my-1" data-horario>11h00</button></li>
-            <li class="lista-servico"><button class="btn bg-principal text-white my-1" data-horario>12h00 - indisponível</button></li>
-            <li class="lista-servico"><button class="btn bg-principal text-white my-1" data-horario>13h00</button></li>
-            <li class="lista-servico"><button class="btn bg-principal text-white my-1" data-horario>14h00</button></li>
-          </ul>
         </div>
         <div class="modal-footer">
           <button class="btn btn-secondary text-white" data-bs-dismiss="modal" data-bs-toggle="modal">Voltar</button>

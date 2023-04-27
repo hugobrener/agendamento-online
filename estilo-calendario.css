@@ -1,10 +1,11 @@
 .day-week {
     background-color: #830a0a;
+    
 }
 
 .table {
     width: 568px;
-    background-color: rgba(185, 183, 183, 0.562); 
+    background-color: rgba(250, 245, 245, 0.562); 
     margin: auto;
     border-radius:10px ;
 }
@@ -15,32 +16,30 @@
 
 .bg-principal:hover {
     background-color: rgb(168, 10, 10);
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 .btn-dia {
     border-color: #830a0a;
-    color: white;
     width: 60px;
     height: 60px;
-    background-color:#830a0a;
     padding: 6px;
 }
 
 .btn-dia:hover {
     color: white;
     background-color: rgb(168, 10, 10);
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 
 
-.btn-dia:active {
-    border: none;
-    
-    
-}
+
 
 .lista-de-servico {
     column-count: 2;
+}
+
+li {
+    list-style: none;
 }
 
 

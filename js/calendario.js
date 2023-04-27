@@ -2,6 +2,7 @@ calendario()
 profissional()
 servico()
 horario()
+escolhaDia()
 confirmacao()
 
 
@@ -43,28 +44,13 @@ function calendario() {document.addEventListener('DOMContentLoaded', function() 
             cell.innerHTML = '';
           } else {
             // Células com os dias do mês atual 
-            cell.innerHTML = `<button type="button" class="btn btn-dia" id="${dia}" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-target="#staticBackdrop">${dia}</button>`
+            cell.innerHTML = `<button type="button" class="btn btn-dia" id="${dia}" data-dia data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-target="#staticBackdrop">${dia}</button>`
             dia++;
           }
           row.appendChild(cell);
         }
         calendario.appendChild(row);
       }
-
-      
-
-      // Adiciona um evento de clique aos links dos dias e pega o dia clicado
-      const diaLinks = document.getElementsByClassName('date-block');
-      for (let i = 0; i < diaLinks.length; i++) {
-        diaLinks[i].addEventListener('click', () => {
-          dia_escohido = diaLinks[i].innerText
-          
-          
-        })
-        
-      }
-
-      
 
     }//DOMContentLoad
   )//addEventListener
@@ -101,10 +87,22 @@ function horario(){
   }
 }
 
+
+
+function escolhaDia(){
+  const opcaoDia = document.querySelectorAll('[data-dia]')
+  for (let k=0; k<opcaoDia.length; k++) {
+    opcaoDia[k].addEventListener('click', () => {
+      dia_escolhido = opcaoDia[k].id
+      return dia_escolhido 
+    } )
+  }
+}
+
 function confirmacao(){
   const confirma = document.querySelector('[data-confirma]')
   confirma.addEventListener('click', () => {
-    alert(`barbeiro ${profissional_escolhido}, serviço ${servico_escolhido}, no dia a ser definido, as ${horario_escolhido}`)
+    alert(`barbeiro ${profissional_escolhido}, serviço ${servico_escolhido},  as ${horario_escolhido}`)
   })
 }
 
